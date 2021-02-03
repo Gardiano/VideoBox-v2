@@ -1,0 +1,34 @@
+
+@media (max-width: 500px) {
+
+header {
+    border-bottom: 1px solid rgb(241,241,241);
+}
+    
+.Header-box {
+height: 70px;
+}
+
+.Header-content p {
+color: rgba(200, 70, 70);
+width: auto;
+text-align: center;
+margin: auto;
+display: block;    
+font-size: 25px;
+font-family: 'Bebas Neue', cursive;
+background: transparent;
+cursor: pointer;
+}
+
+#goBack {
+width: 100px;
+height: 30px;
+border: 0;
+outline: 0;
+margin: 0 0 0 20px;
+background: transparent;
+border-radius: 0;
+border-bottom: 1px solid rgba(200, 70, 70);
+}
+}

@@ -1,0 +1,393 @@
+@media (min-width: 1051px) and (max-width: 1920px) {
+* {
+font-family: 'Sourc Sans Pro', sans-serif;
+}
+
+a {
+text-decoration: none;
+}
+
+#divider-svg {
+background-image: url('../../assets/triangle.svg');
+}
+
+.filme-container {
+width: 100%;
+max-width: 1200px;
+height: auto;
+margin: auto;
+display: block;
+}
+
+.backdrop_path {
+width: 100%;
+height: 600px;
+background-position: center;
+background-size: 100% 700px;
+background-repeat: no-repeat;
+padding-bottom: 20px;
+}
+
+.poster_path {
+width: 100%;
+max-width: 300px;
+height: 400px;
+/* margin: auto;
+display: block;    */    
+margin-left: 100px;
+background-position: center;
+background-size: 300px 400px;
+background-repeat: no-repeat;
+display: block;
+border: 0;
+}
+
+.titleOrName {
+color: whitesmoke;
+width: 300px;
+height: 30px;
+/* margin: 15px auto; */
+display: block;
+text-align: left;
+font-weight: 700;
+font-size: 18px;
+padding-bottom: 20px;
+border: 1px solid transparent;
+
+margin-left: 430px;
+position: relative;
+top: -400px;
+}
+
+.release_date_container {
+width: 200px;
+height: 30px;
+/* margin: auto; */
+display: block;
+
+margin-left: 430px;
+position: relative;
+top: -370px;
+}
+
+.release_date_container label {
+color: whitesmoke;
+width: auto;
+height: 25px;
+display: block;
+float: left;
+border-radius: 3px;
+line-height: 1.5;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.release_date {
+color: whitesmoke;
+width: 70px;
+height: 25px;
+float: left;
+text-align: center;
+font-weight: 700;
+font-size: 12px;
+line-height: 0;
+border-radius: 3px;
+background: rgb(47, 128, 175);     
+}
+
+.runtime_container {
+width: 200px;
+height: 30px;
+margin: 0 auto 30px;
+display: block;
+
+margin-left: 430px;
+position: relative;
+top: -370px;
+}
+
+.runtime_container label {
+color: whitesmoke;
+width: auto;
+height: 25px;
+margin-top: 5px;
+display: 10px block;
+float: left;
+border-radius: 3px;
+line-height: 1.5;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.run_time {
+color: whitesmoke;
+width: 70px;
+height: 25px;
+float: left;
+text-align: center;
+font-weight: 700;
+font-size: 12px;
+line-height: 0;
+border-radius: 3px;
+background: rgb(47, 128, 175);
+border: 1px solid transparent;  
+margin-top: 5px;
+}
+
+.generos {
+width: auto;
+max-width: 190px;
+height: auto;
+margin: 10px auto;
+display: flex;
+flex-wrap: wrap;
+border: 1px solid transparent;
+
+margin-left: 430px;
+position: relative;
+top: -380px;
+}
+
+.generos-name {
+color: whitesmoke;
+width: auto;
+height: 10px;  
+margin: 5px;
+padding: 7px;
+text-align: center;    
+border-radius: 4px;
+font-weight: bold;
+line-height: 0.8;
+font-size: 14px;
+display: inline-block;
+}
+
+.tagline p {
+width: auto;
+height: 10px;
+margin: auto;
+display: block;
+max-width: 300px;
+font-size: 16px;
+text-align: left;
+font-weight: 700;
+font-family: monospace;
+color: rgba(192, 192, 192, 0.774);
+border: 1px solid transparent;
+
+margin-left: 620px;
+position: relative;
+top: -390px;
+}
+
+.vote_count {
+color: white;
+width: 100%;   
+height: 50px;
+margin: 10px auto;
+display: block;
+max-width: 100px;
+text-align: center;
+margin-left: 200px;
+position: relative;
+top: -230px;
+border: 1px solid transparent;
+}
+
+.diretor {
+width: 200px;
+height: auto;
+display: flex;
+margin: auto;
+position: relative;
+top: -360px;
+margin-left: 430px;
+line-height: .2;
+}
+
+.diretor label {
+color: rgba(192, 192, 192, 0.774);
+
+}
+.diretor p {
+color: white;
+}
+
+.Writing {
+width: 200px;
+height: auto;
+display: flex;
+margin: auto;
+position: relative;
+top: -398px;
+margin-left: 730px;
+line-height: .2;
+}
+
+.Writing label {
+color: rgba(192, 192, 192, 0.774);
+}
+
+.Writing p {
+color: white;
+}
+
+.infos {
+width: 100%;
+height: 300px;
+display: block;
+margin-top: -30px;
+margin-bottom: 100px;
+background: white;  
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+border: 1px solid rgb(241, 241, 241);
+border-top: 1px solid grey;
+border-left: 0;
+border-right: 0;
+border-bottom: 0px;
+}
+
+.overview {
+width: 100%;
+max-width: 600px;
+height: auto;
+margin: 0px auto;
+display: block;
+padding: 2px;
+font-size: 16px;
+color: rgb(200, 200, 200);
+font-weight: 700;
+text-align: justify;
+line-height: 1.2;
+border-top: 1px solid rgb(221, 221, 221);
+border-bottom: 1px solid rgb(221, 221, 221);
+
+margin-left: 430px;
+position: relative;
+top: -380px;
+border: 1px solid transparent;
+}
+
+.empty-overview {    
+text-align: center;
+}
+
+.elenco-container {
+width: 100%;
+max-width: 900px;
+height: 180px;
+margin: 20px auto;
+display: flex;
+padding: 0px;
+overflow-x: scroll;
+position: relative;
+top: -250px;
+border-radius: 5px;
+}
+
+.elenco-container img {
+width: 90px;
+height: 90px;
+border: 1px solid grey;
+border-radius: 80px;
+display: flex;
+margin-top: 10px;
+margin-right: 10px;
+margin-left: 10px;
+outline: 0;
+border: 5px solid rgb(200, 70,70);
+
+box-shadow: -1px 6px 12px -3px rgba(0,0,0,0.84);
+-webkit-box-shadow: -1px 6px 12px -3px rgba(0,0,0,0.84);
+-moz-box-shadow: -1px 6px 12px -3px rgba(0,0,0,0.84);
+}
+
+.elenco-container p {
+font-size: 12px;
+text-align: center;
+color: rgb(153, 153, 153);
+}
+
+/* buttons & links */
+#youtube-container {
+width: 100%;
+max-width: 100px;
+height: 50px;
+margin: 30px auto;
+display: block;
+position: relative;
+top: -540px;
+margin-left: 600px;
+}
+
+#youtube-container button {
+margin: auto;
+display: block;
+background: transparent;
+border: 0;
+}
+
+#youtube {
+font-size: 30px;
+margin: auto;
+display: block;
+}
+
+#disabledYouTubeButton {
+height: 0;
+border: 0;
+outline: 0;
+background: transparent;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+#disabledYouTube {
+width: 50px;
+height: auto;
+margin: 0px auto;
+display: block;
+color: grey;
+font-size: 30px;
+cursor: not-allowed;
+}
+
+#person-undefined {
+width: 90px;
+height: 90px;
+border: 0;
+border-radius: 100px;
+display: block;
+margin-top: 20px;
+margin-right: 20px;
+margin-left: 20px;  
+text-align: center;
+font-size: 55px; 
+}
+
+.trailler {
+font-size: 20px;
+}
+
+.sinopse {
+display: none;
+}
+
+.elenco {
+float: center;
+font-size: 20px;
+margin: auto;
+position: relative;
+top: -250px;
+}
+
+h4 {
+width: 80px;
+display: block;
+margin: 25px auto;
+color: rgb(200, 70,70);
+}
+
+i {
+color: rgb(200, 70,70);
+}   
+}

@@ -1,0 +1,11 @@
+
+@media (max-width: 500px) {
+    footer {
+    margin-top: 0px; 
+    }
+    img {  
+    width: 100px;
+    height: 24px;
+    cursor: pointer;
+    }
+}
