@@ -4,12 +4,13 @@ import {   useEffect, useState } from "react";
 import "./filme.css";
 import './medias.css';
 
-import load from "../../assets/loading.gif";
+import load from "../../assets/ld.gif";
 
 import { RouteComponentProps } from "react-router";
 
-// import Moment from "react-moment";
+import Moment from "react-moment";
 import "moment/locale/pt-br";
+Moment.globalLocale = "pt-br";
 
 type Params = { id?: string };
 type FilmeDetailProps = RouteComponentProps<Params>;
@@ -69,7 +70,7 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
       setisLoading(false);
     }, 1000);
     return () => clearTimeout();
-  }, [match.params.id]);
+  }, [match.params.id]); 
 
   // url trailler
   useEffect(() => {
@@ -188,7 +189,12 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
     <section id="divider-svg">   
       <div>
         {isLoading === true ? (
-          <img id="loadingTheme" src={load} alt="load" />
+          <div id="loadingTheme-container">
+            <div id="loadingTheme-gif" style={{
+                backgroundImage: `url(${load})`
+                }}>
+            </div>
+          </div>
         ) : (
           <div className="filme-container">
             <div
@@ -209,7 +215,13 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
               <div className="release_date_container">
                 <label> Lançamento: &nbsp;</label>
                 <div className="release_date">
-                  <p> {movie.release_date} </p>
+                   <p>
+                      <Moment                        
+                        locale="pt-br"
+                        format="DD/MM/YYYY"
+                        date={movie.release_date}               
+                      ></Moment>   
+                    </p>                
                 </div>
               </div>
 
