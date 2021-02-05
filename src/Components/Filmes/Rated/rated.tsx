@@ -1,7 +1,7 @@
 import { useEffect, FunctionComponent, useState } from "react";
 import '../../FilmesList/filmesList.css';
 
-import load from '../../../assets/loading.gif';
+import load from '../../../assets/ld3.gif';
 
 import { Link } from "react-router-dom";
 

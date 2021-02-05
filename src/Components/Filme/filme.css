@@ -18,8 +18,8 @@ border: 1px solid transparent;
 }
 
 #loadingTheme-gif {
-width: 200px;
-height: 200px;
+width: 150px;
+height: 150px;
 margin: 200px auto;
 display: block;
 background-size: 100% 200px;
@@ -304,15 +304,14 @@ border-radius: 5px;
 .elenco-container img {
 width: 90px;
 height: 90px;
-border: 1px solid grey;
-border-radius: 80px;
+cursor: unset;
+outline: 0;
 display: flex;
 margin-top: 10px;
 margin-right: 10px;
 margin-left: 10px;
-outline: 0;
+border-radius: 80px;
 border: 5px solid rgb(200, 70,70);
-
 box-shadow: -1px 6px 12px -3px rgba(0,0,0,0.84);
 -webkit-box-shadow: -1px 6px 12px -3px rgba(0,0,0,0.84);
 -moz-box-shadow: -1px 6px 12px -3px rgba(0,0,0,0.84);

@@ -20,7 +20,7 @@ margin-top: 5px;
 font-size: 30px;
 font-family: 'Bebas Neue', cursive;
 background: transparent;
-cursor: unset;
+cursor: pointer;
 }
 
 #goBack {
