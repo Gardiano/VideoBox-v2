@@ -1,6 +1,6 @@
 /* eslint-disable no-sequences */
 
-import {   useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./filme.css";
 import './medias.css';
 

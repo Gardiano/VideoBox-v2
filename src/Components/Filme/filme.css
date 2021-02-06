@@ -7,9 +7,9 @@ a {
 text-decoration: none;
 }
 
-#divider-svg {
+/* #divider-svg {
 background-image: url('../../assets/triangle.svg');
-}
+} */
 
 #loadingTheme-container {
 width: 100%;
@@ -18,14 +18,14 @@ border: 1px solid transparent;
 }
 
 #loadingTheme-gif {
-width: 150px;
-height: 150px;
-margin: 200px auto;
+width: 100px;
+height: 50px;
 display: block;
-background-size: 100% 200px;
+margin: 200px auto;
+border-radius: 10px;
+background-size: 100px 50px;
 background-position: center;
 background-repeat: no-repeat;
-border-radius: 200px;
 }
 
 .filme-container {

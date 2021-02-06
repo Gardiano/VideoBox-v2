@@ -7,7 +7,7 @@ import Trending from '../Filmes/Trendings/trending';
 import Rated from '../Filmes/Rated/rated';
 import Popular from '../Filmes/Popular/popular';
 import WatchingNow from '../Filmes/WatchingNow/watching';
-import Search from '../Search/search';
+import Search from '../SearchBar/search';
 
 const Home: FunctionComponent = () => {
 

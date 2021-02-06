@@ -19,7 +19,7 @@ text-align: left;
 margin-left: 10px;
 margin-top: 30px;
 padding-top: 50px;
-margin-bottom: -4px;
+margin-bottom: 5px;
 }
 
 .list-card {
@@ -28,6 +28,7 @@ display: flex;
 overflow-x: scroll;
 overflow-y: hidden;
 margin: auto;
+background: url('../../assets/red.svg');
 }
 
 .list-card > div {
@@ -40,13 +41,13 @@ border: 1px solid red!important;
 
 /* width cards */
 .width-cards {
-width: 300px;
+width: 250px;
 z-index: 9999;
 }
 
 .list-card a {
-width: 300px;
-height: 290px;
+width: 250px;
+height: 250px;
 margin: 10px;
 font-size: 30px;
 border: none;
@@ -57,7 +58,7 @@ outline: none;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;     
 background-position: center;
-background-size: 300px 290px;
+background-size: 250px 250px;
 background-repeat: no-repeat;
 }
 
