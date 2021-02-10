@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./findMovie.css";
+import './findMovie.css';
+import './medias.css';
+
+import Truncate from "react-truncate";
 
 import { RouteComponentProps } from "react-router";
 
@@ -12,6 +15,8 @@ import load from "../../assets/ld.gif";
 import Moment from "react-moment";
 import "moment/locale/pt-br";
 Moment.globalLocale = "pt-br";
+
+
 
 type Params = { search?: string };
 type SearchListDetailProps = RouteComponentProps<Params>;
@@ -74,7 +79,7 @@ const SearchList: React.FC<SearchListDetailProps> = ({ match }) => {
             <div className="empty-search-container">
               <div className="empty-search-box">
                 <p>
-                  Ops.. Não foram encontrados filmes que correspondam aos seus
+                  Não foram encontrados filmes que correspondam aos seus
                   critérios de busca. :(
                 </p>
                 <Link to={`${"/Home"}`}>
@@ -113,10 +118,22 @@ const SearchList: React.FC<SearchListDetailProps> = ({ match }) => {
                       ></Moment>
                     </p>
 
-                    {itens.overview === "" ? (
+                    {itens.overview === '' ? (
                       <p> Sinopse Indisponível </p>
-                    ) : (
-                      <h5> {itens.overview} </h5>
+                    ) : (   
+                        // Truncate é tratado pelo npm como um <span>  </span>  
+                        <Truncate                      
+                        lines={1}                        
+                        ellipsis={
+                          <span>
+                            <Link
+                              className="truncate"
+                              to={`${`/Filme/${itens.id}`}`}> Ler Mais
+                            </Link>
+                          </span>
+                          }>
+                            {itens.overview}
+                        </Truncate>                      
                     )}
                   </div>
                 );

@@ -1,13 +1,10 @@
 
 
-
-
 main .searchList-box {
 width: 100%;
 max-width: 1200px;
 height: auto;
 margin: auto;
-
 display: block;
 }
 
@@ -18,7 +15,8 @@ height: 250px;
 display: block;
 border-radius: 3px;
 margin: 30px auto 25px;
-background: rgb(241, 241, 241);
+background: #fafafa;
+border: 1px solid rgb(221, 221, 221);  
 box-shadow: -1px 7px 10px -4px rgba(200,70,70,0.51);
 -webkit-box-shadow: -1px 7px 10px -4px rgba(200,70,70,0.51);
 -moz-box-shadow: -1px 7px 10px -4px rgba(200,70,70,0.51);
@@ -48,11 +46,21 @@ position: relative;
 top: -10px;
 }
 
-main .searchList-box .searchList-card h5 {
-color: rgb(100, 100, 100);
+main .searchList-box .searchList-card span {
+font-size: 15px;
 text-align: left;
+line-height: 1;
 display: block;
 padding-right: 15px;
+color: grey;
+color: rgb(100, 100, 100);
+}
+
+.truncate {
+font-size: 12px;
+line-height: 3;
+font-family: monospace;
+color: rgb(200,70,70);
 }
 
 main .empty-search-container {
@@ -78,22 +86,22 @@ font-family: monospace;
 }
 
 main .empty-search-box a {
-width: 100px;
-height: 35px;
+width: 300px;
+height: 25px;
 color: white;
 background: rgb(200,70,70);
 font-family: monospace;
 margin: auto;
 display: block;
-line-height: 3;
+line-height: 2.5;
 text-align: center;
 border-radius: 5px;
 border: 1px solid transparent;
 }
 
 .fa-long-arrow-alt-left {
-    color: white;
-    font-size: 22px;
+color: white;
+font-size: 22px;
 }
 
 

@@ -48,9 +48,7 @@ padding-bottom: 20px;
 .poster_path {
 width: 100%;
 max-width: 300px;
-height: 400px;
-/* margin: auto;
-display: block;    */    
+height: 400px;  
 margin-left: 100px;
 background-position: center;
 background-size: 300px 400px;
@@ -59,11 +57,22 @@ display: block;
 border: 0;
 }
 
+#empty-poster-path {
+width: 100%;
+max-width: 300px;
+height: 400px;  
+margin-left: 100px;
+background-position: center;
+background-size: 100px 100px;
+background-repeat: no-repeat;
+display: block;
+border: 0;  
+}
+
 .titleOrName {
 color: whitesmoke;
 width: 300px;
 height: 30px;
-/* margin: 15px auto; */
 display: block;
 text-align: left;
 font-weight: 700;
@@ -79,7 +88,6 @@ top: -400px;
 .release_date_container {
 width: 200px;
 height: 30px;
-/* margin: auto; */
 display: block;
 
 margin-left: 430px;

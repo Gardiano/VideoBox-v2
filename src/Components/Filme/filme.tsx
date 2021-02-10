@@ -6,6 +6,8 @@ import './medias.css';
 
 import load from "../../assets/ld.gif";
 
+import EmptyMovie from '../../assets/emptyfilm.png';
+
 import { RouteComponentProps } from "react-router";
 
 import Moment from "react-moment";
@@ -61,6 +63,7 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
           }
         })
         .then((json) => {
+          console.log('movie',json.poster_path)
           setMovie(json);
           setGenres(json.genres);
         })
@@ -204,9 +207,16 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
                   url(${`https://image.tmdb.org/t/p/w500${movie?.backdrop_path}`})`,
               }}
             >
-              <div className="poster_path"
-                style={{ backgroundImage: `url(${`https://image.tmdb.org/t/p/w500${movie?.poster_path}`})`}}>
-              </div>
+              
+              {movie?.poster_path === null ?                 
+                (<div id="empty-poster-path"
+                    style={{ backgroundImage: `url(${EmptyMovie})`}}>
+                  </div>)
+                :
+               (<div className="poster_path"
+                    style={{ backgroundImage: `url(${`https://image.tmdb.org/t/p/w500${movie?.poster_path}`})`}}>
+                  </div>)
+              }
 
               <div className="titleOrName">
                 <p> {movie.title || movie.name} </p>

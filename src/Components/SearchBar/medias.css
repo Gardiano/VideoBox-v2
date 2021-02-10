@@ -1,0 +1,130 @@
+
+
+/* mobile */
+@media (max-width: 430px) {
+    .search-container {
+    margin: 0;
+    padding: 10px;
+    }  
+
+    .search-box {
+    width: 100%;
+    height: 50px;
+    max-width: 550px;
+    display: flex;
+    margin: 20px auto;
+    cursor: pointer;
+    }
+    
+    .search-box input {
+    width: 100%;
+    height: 30px;
+    max-width: 400px;
+    outline: 0;
+    margin: auto;
+    display: block;
+    border: 0;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    background: rgb(250, 250, 250);
+    }
+    
+    .search-box input:focus {  
+    transition: .1s;
+    position: relative;
+    border-bottom: 2px solid rgb(200,70,70);
+    }
+    
+    .search-icon {
+    width: 100px;
+    height: 25px;
+    color: white;
+    margin: 12px auto;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 2;
+    cursor: pointer;
+    text-align:center;
+    border-radius: 3px;
+    text-decoration: none;
+    background: rgb(200,70,70);
+    border: 1px solid rgb(200,70,70);
+    position: relative;
+    left: -15px;
+    border-radius: 20px;   
+    }
+    
+    .search-icon-disabled {
+    color: rgb(200,70,70);
+    width: 100px;
+    height: 32px;
+    outline: 0;
+    line-height: 2;
+    font-size: 16px;
+    margin: 10px auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: not-allowed;
+    text-align:center;
+    border-radius: 3px;
+    text-decoration: none;
+    background: rgb(241, 241, 241);
+    border: 1px solid transparent;
+    }
+
+    ::-webkit-input-placeholder {
+    font-size: 10px;
+    font-weight: 900;
+    padding-left: 5px;   
+    }
+
+}
+
+/* desktop 1 */
+@media screen and (min-width: 431px) and (max-width: 950px) {
+    .search-container {
+    margin: 0;
+    padding: 10px;
+    }      
+
+    .search-box input {
+    max-width: 400px;
+    } 
+        
+    .search-box input:focus {
+    border-bottom: 2px solid rgb(200,70,70);
+    border-radius: 5px;
+    transition: .1s;
+    box-shadow: -1px 7px 10px -4px rgba(200,70,70,0.51);
+    -webkit-box-shadow: -1px 7px 10px -4px rgba(200,70,70,0.51);
+    -moz-box-shadow: -1px 7px 10px -4px rgba(200,70,70,0.51);
+    }
+
+    .search-icon {
+    position: relative;
+    left: -15px;
+    border-radius: 20px;   
+    }
+
+    ::-webkit-input-placeholder {
+    color: grey;
+    font-family: monospace;
+    padding-left: 70px;   
+    }
+}
+
+/* desktop 2 */
+@media screen and (min-width: 951px) and (max-width: 1050px) {
+    .search-container {
+    margin: 0;
+    padding: 10px;
+    }      
+
+    .search-box input {
+    max-width: 400px;
+    }
+
+    ::-webkit-input-placeholder {
+    padding-left: 85px;   
+    }
+
+}

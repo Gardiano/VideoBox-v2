@@ -1,0 +1,42 @@
+
+main .error-container {
+width: 100%;
+max-width: 1000px;
+height: 770px;
+margin: auto;
+display: block; 
+border: 1px solid transparent; 
+}
+
+main .empty-error-box {
+width: 500px;
+height: 300px;
+margin: 200px auto;
+display: block;
+}
+
+main .empty-error-box p {
+color: rgb(200,70,70);
+font-size: 22px;
+text-align: center;
+font-family: monospace;
+}
+
+main .empty-error-box a {
+width: 300px;
+height: 25px;
+color: white;
+background: rgb(200,70,70);
+font-family: monospace;
+margin: auto;
+display: block;
+line-height: 2.5;
+text-align: center;
+border-radius: 5px;
+border: 1px solid transparent;
+}
+
+.fa-long-arrow-alt-left {
+color: white;
+font-size: 22px;
+}

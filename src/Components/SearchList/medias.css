@@ -1,0 +1,225 @@
+
+
+
+@media (max-width: 430px) {    
+    main .searchList-card {
+    width: auto;
+    height: 170px;
+    display: block;  
+    margin-left: 10px;    
+    margin-right: 10px;
+    background: #fafafa;
+    box-shadow: none;
+    }
+
+    main .poster_path {
+    width: 120px;
+    height: 170px;  
+    top: 0px;
+    position: relative;
+    margin-right: 15px;    
+    background-size: 120px 170px;  
+    }
+
+    main .searchList-box .searchList-card h2 {
+    padding-top: 0px;
+    font-size: 14px;
+    display: block;
+    }
+
+    main .searchList-box .searchList-card p {
+    font-size: 13px;
+    color: grey;
+    display: block;
+    position: relative;
+    top: -10px;
+    }
+
+    main .searchList-box .searchList-card span {            
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    text-align: left;
+    display: block;
+    padding-right: 15px;
+    }
+
+    /* Empty input  */
+    main .empty-search-container {
+    width: 100%;
+    max-width: 300px;
+    height: 65vh;
+    margin: auto;
+    margin-top: 150px;
+    display: block;
+    }
+    
+    main .empty-search-box {
+    width: 280px;
+    height: 300px;
+    margin:  auto;
+    display: block;
+    }
+    
+    main .empty-search-box p {
+    color: rgb(200,70,70);
+    font-size: 15px;
+    text-align: center;
+    font-family: monospace;
+    }
+    
+    main .empty-search-box a {
+    width: 280px;
+    height: 25px;
+    color: white;
+    background: rgb(200,70,70);
+    font-family: monospace;
+    margin: 50px auto 0;
+    display: block;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    }
+    
+    .fa-long-arrow-alt-left {
+    color: white;
+    font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width: 950px) {
+    main .searchList-box {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding-left: 0px;
+    }
+    
+    main .searchList-card {
+    width: auto;
+    max-width: 900px;
+    height: 190px;
+    display: block;  
+    margin-left: 10px;    
+    margin-right: 10px;
+    background: #fafafa;
+    box-shadow: -1px 7px 10px -4px rgba(200,70,70,0.51);
+    -webkit-box-shadow: -1px 7px 10px -4px rgba(200,70,70,0.51);
+    -moz-box-shadow: -1px 7px 10px -4px rgba(200,70,70,0.51);   
+    }
+
+    main .poster_path {
+    width: 150px;
+    height: 190px;  
+    top: 0px;
+    position: relative;
+    margin-right: 15px;    
+    background-size: 150px 190px;  
+    }
+
+    main .searchList-box .searchList-card h2 {
+    padding-top: 0px;
+    font-size: 18px;
+    display: block;
+    }
+
+    main .searchList-box .searchList-card p {
+    color: grey;
+    display: block;
+    position: relative;
+    top: -10px;
+    }
+
+    main .searchList-box .searchList-card span {
+    color: rgb(100, 100, 100);
+    text-align: left;
+    display: block;
+    padding-right: 15px;
+    }
+
+    /* Empty input  */
+    main .empty-search-container {
+    width: 100%;
+    max-width: 400px;
+    height: 800px;
+    margin: auto;
+    display: block;
+    }
+    
+    main .empty-search-box {
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    display: block;
+    }
+    
+    main .empty-search-box p {
+    color: rgb(200,70,70);
+    font-size: 18px;
+    text-align: center;
+    font-family: monospace;
+    }
+    
+    main .empty-search-box a {
+    width: 300px;
+    height: 25px;
+    color: white;
+    background: rgb(200,70,70);
+    font-family: monospace;
+    margin: auto;
+    display: block;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    }
+    
+    .fa-long-arrow-alt-left {
+    color: white;
+    font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1050px) {  
+    main .searchList-card {
+    width: auto;
+    max-width: 1050px;
+    height: 190px;
+    display: block;  
+    margin-left: 10px;    
+    margin-right: 10px;
+    background: #fafafa;  
+    }
+
+    main .poster_path {
+    width: 150px;
+    height: 190px;  
+    top: 0px;
+    position: relative;
+    margin-right: 15px;    
+    background-size: 150px 190px;    
+    }
+
+    main .searchList-box .searchList-card h2 {
+    padding-top: 0px;
+    font-size: 18px;
+    display: block;
+    }
+
+    main .searchList-box .searchList-card p {
+    color: grey;
+    display: block;
+    position: relative;
+    top: -10px;
+    }
+
+    main .searchList-box .searchList-card span {
+    color: grey;
+    text-align: left;
+    display: block;
+    padding-right: 15px;
+    }        
+}
+
+
