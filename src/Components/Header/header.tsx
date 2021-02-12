@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     <header>
       <div className="Header-box">
           <div className="Header-content">   
-              <button id="goBack" type="button" onClick={() => history.goBack()}> <p >VIDEOBOX </p> </button>                      
+              <button id="goBack" type="button" onClick={() => history.goBack()}> <p>VIDEOBOX </p> </button>                      
           </div>                
         </div>                           
 </header>

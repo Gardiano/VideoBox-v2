@@ -1,4 +1,7 @@
 
+main .search-container {
+    padding: 0;
+}
 
 main .searchList-box {
 width: 100%;

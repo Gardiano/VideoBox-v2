@@ -5,8 +5,9 @@ max-width: 1500px;
 height: 330px;
 display: block;
 margin: -40px auto 100px;
-padding-left: 10px;
-padding-right: 10px;
+
+/* padding-left: 10px;
+padding-right: 10px; */
 }
 
 .list-container a {
@@ -25,9 +26,10 @@ margin-bottom: 5px;
 .list-card {
 width: 100%;
 display: flex;
-overflow-x: scroll;
-overflow-y: hidden;
+overflow-x: auto;
+overflow-y: scroll;
 margin: auto;
+margin-left: 5px;
 background: rgb(200,70,70);
 background: linear-gradient(90deg, rgba(200,70,70,0) 76%, rgba(200,70,70,1) 100%);
 }
@@ -119,23 +121,23 @@ border-radius: 50px;
 
 ::-webkit-scrollbar {
 width:  7px;
-height: 8px;
+height: 5px;
 }
+
     
-::-webkit-scrollbar-track {    
+::-webkit-scrollbar-track { 
 background: whitesmoke;
 }
 
 ::-webkit-scrollbar-thumb {
-height: 1px;
 background:rgba(200, 70, 70);
 border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-height: 1px;
 background: #252e39;
 }
+
 
 
 

@@ -1,4 +1,4 @@
-/* eslint-disable no-sequences */
+/* eslint-disable eqeqeq */
 
 import { useEffect, useState } from "react";
 import "./filme.css";
@@ -30,8 +30,8 @@ interface Props {
   tagline?: string
   overview?: string | any
   isloading?: boolean
+  window?: HTMLElement
 }
-
 interface GenresProps {
   genres?: []
   name?: string 
@@ -40,17 +40,18 @@ interface GenresProps {
 }
 
 const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
-  const [trailler, setTrailler] = useState();
-  const [credits, setCredtis] = useState<[]>([]);
-  const [movie, setMovie] = useState<Props>({});
+  const [trailler, setTrailler] = useState(); 
   const [director, setDirector] = useState();
   const [writing, setWriting] = useState();
+  const [credits, setCredtis] = useState<[]>([]);
+  const [movie, setMovie] = useState<Props>({});
   const [genres, setGenres] = useState<GenresProps[]>([]);
   const [isLoading, setisLoading] = useState<boolean>(true);
 
   // movie
   useEffect(() => {
-    setTimeout(() => {
+    window.scrollTo(0,0); 
+    setTimeout(() => {      
       fetch(
         `https://api.themoviedb.org/3/movie/${match.params.id}?api_key=5f0de47789bd5535f17999cce273751e&language=pt-BR`
       )
@@ -60,20 +61,19 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
           }
           if (r.status === 404 || r.status === 400) {
             throw Error(r.statusText);
-          }
+          }          
         })
         .then((json) => {
-          console.log('movie',json.poster_path)
           setMovie(json);
           setGenres(json.genres);
         })
         .catch((error) => {
           console.log(`Catch: ${error}`);
         });
-      setisLoading(false);
-    }, 1000);
+      setisLoading(false);      
+    }, 1000);  
     return () => clearTimeout();
-  }, [match.params.id]); 
+  }, [match.params.id]);  
 
   // url trailler
   useEffect(() => {
@@ -111,9 +111,8 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
           throw Error(r.statusText);
         }
       })
-        .then((json) => {    
-          console.log(json)
-          console.log(json.crew)
+        .then((json) => {
+          // eslint-disable-next-line array-callback-return
           json.crew.map((crew: any) => {         
              switch( crew.job !== '' ) {
 
@@ -143,6 +142,10 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
           console.log(error);
         });
   }, [match.params.id]);
+
+  // useEffect(() => {
+  //   window.scrollTo(0,0);
+  // },[]);
 
   const backgroundGenres = genres.map((genero: GenresProps) => {
     switch( genero !==  '' ) {                   
@@ -186,10 +189,10 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
         return  <p className="generos-name" style={{background:'whitesmoke'}}> {genero.name} </p>
            
         default : return <p className="generos-name" style={{display:'none'}}> </p>; 
-   }});    
-
+   }});
+   
   return (
-    <section id="divider-svg">   
+    <section id="divider-svg">
       <div>
         {isLoading === true ? (
           <div id="loadingTheme-container">
@@ -199,7 +202,7 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
             </div>
           </div>
         ) : (
-          <div className="filme-container">
+          <div className="filme-container">            
             <div
               className="backdrop_path"
               style={{
@@ -312,12 +315,12 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
                         </div>                        
                       )
                     })}
-              </div>
-              
+              </div>              
             </div>
           </div>
-        )}
+        )}       
       </div>
+    
     </section>
   );
 };

@@ -10,7 +10,6 @@ import WatchingNow from '../Filmes/WatchingNow/watching';
 import Search from '../SearchBar/search';
 
 const Home: FunctionComponent = () => {
-
   return (
     <main>   
       <Search />    

@@ -34,6 +34,7 @@ const SearchList: React.FC<SearchListDetailProps> = ({ match }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    window.scrollTo(0,0);
     loadList();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

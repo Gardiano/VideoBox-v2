@@ -5,7 +5,6 @@ import "../../FilmesList/medias.css";
 import load from "../../../assets/ld3.gif";
 
 import { Link } from "react-router-dom";
-
 interface Props {
   trending?: string[] | undefined | null;
   poster_path?: string;
@@ -29,6 +28,7 @@ const Trending: FunctionComponent<Props> = () => {
   }, []);
 
   function loadTrending() {
+    window.scrollTo(0,0);
     setTimeout(() => {
       fetch(urlTrending)
         .then((r) => {

@@ -12,6 +12,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
+    "@types/react-router-hash-link": "^1.2.1",
     "@types/react-truncate": "^2.3.3",
     "hh-mm-ss": "^1.2.0",
     "moment": "^2.29.1",

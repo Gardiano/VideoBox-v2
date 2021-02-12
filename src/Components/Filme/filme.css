@@ -1,4 +1,4 @@
-@media (min-width: 1051px) and (max-width: 1920px) {
+@media (min-width: 1051px) and (max-width: 4000px) {
 * {
 font-family: 'Sourc Sans Pro', sans-serif;
 }
@@ -6,10 +6,6 @@ font-family: 'Sourc Sans Pro', sans-serif;
 a {
 text-decoration: none;
 }
-
-/* #divider-svg {
-background-image: url('../../assets/triangle.svg');
-} */
 
 #loadingTheme-container {
 width: 100%;
