@@ -14,6 +14,8 @@ import load from "../../assets/ld.gif";
 
 import Moment from "react-moment";
 import "moment/locale/pt-br";
+import Header from "../Header/header";
+import Footer from "../Footer/footer";
 Moment.globalLocale = "pt-br";
 
 
@@ -65,6 +67,7 @@ const SearchList: React.FC<SearchListDetailProps> = ({ match }) => {
 
   return (
     <main className="searchList-container">
+      <Header /> 
       {isLoading === true ? (
         <div id="loadingTheme-container">
           <div
@@ -143,6 +146,7 @@ const SearchList: React.FC<SearchListDetailProps> = ({ match }) => {
           )}
         </div>
       )}
+      <Footer />
     </main>
   );
 };

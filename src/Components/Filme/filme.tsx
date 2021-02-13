@@ -12,6 +12,8 @@ import { RouteComponentProps } from "react-router";
 
 import Moment from "react-moment";
 import "moment/locale/pt-br";
+import Header from "../Header/header";
+import Footer from "../Footer/footer";
 Moment.globalLocale = "pt-br";
 
 type Params = { id?: string };
@@ -189,6 +191,7 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
    
   return (
     <section id="divider-svg">
+      <Header />
       <div>
         {isLoading === true ? (
           <div id="loadingTheme-container">
@@ -316,7 +319,7 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
           </div>
         )}       
       </div>
-    
+      <Footer />
     </section>
   );
 };

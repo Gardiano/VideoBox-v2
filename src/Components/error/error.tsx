@@ -3,10 +3,13 @@ import './error.css';
 import './medias.css';
 
 import { Link } from 'react-router-dom';
+import Header from '../Header/header';
+import Footer from '../Footer/footer';
 
 const Err: React.FC = () => {
   return (
       <main>
+        <Header />
           <div className="error-container">
               <div className="empty-error-box">
                 <p>
@@ -17,6 +20,7 @@ const Err: React.FC = () => {
                 </Link>
               </div>
             </div>
+        <Footer />
       </main>
   )
 }

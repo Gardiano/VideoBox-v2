@@ -1,22 +1,18 @@
 
 
-import { BrowserRouter as Router } from 'react-router-dom'
-
-import Header from './Components/Header/header';
-
-import Footer from './Components/Footer/footer';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Routes from './Routes';
 
 import './App.css';
 
-const App = () => {
+const App: React.FC = () => {  
   return (
-    <div className="App">       
-      <Router>        
-          <Header />  
+    <div className="App">
+      <Router>            
+          {/* <Header />   */}
             <Routes />
-          <Footer />    
+          {/* <Footer />     */}
       </Router>    
     </div>
   );
