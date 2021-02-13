@@ -143,10 +143,6 @@ const Filme: React.FC<FilmeDetailProps> = ({ match }) => {
         });
   }, [match.params.id]);
 
-  // useEffect(() => {
-  //   window.scrollTo(0,0);
-  // },[]);
-
   const backgroundGenres = genres.map((genero: GenresProps) => {
     switch( genero !==  '' ) {                   
       case genero.name === "Ação" : 
