@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   let history = useHistory();
 
   return (
-    <header>
+    <header id="header-container">
       <div className="Header-box">
           <div className="Header-content">   
               <button id="goBack" type="button" onClick={() => history.goBack()}> <p>VIDEOBOX </p> </button>                      

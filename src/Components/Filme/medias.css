@@ -3,7 +3,7 @@
 /* mobile */
 @media (max-width: 430px) {
 .diretor, .Writing {
-    display: none;
+display: none;
 }
 * {
 font-family: 'Sourc Sans Pro', sans-serif;
