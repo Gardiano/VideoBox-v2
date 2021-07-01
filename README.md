@@ -12,4 +12,4 @@ Filmes Populares :white_check_mark: <br>
 Filmes Para Assistir Agora :white_check_mark: <br>
 Search bar para procurar seu filme favorito. :white_check_mark: <br>
 
- https://video-box-v2.gardiano.vercel.app :rocket::rocket: !!
+ https://video-box-v2.gardiano.vercel.app :rocket::rocket:
