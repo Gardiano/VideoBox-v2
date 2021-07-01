@@ -1,6 +1,6 @@
 # VideoBox-v2 :rocket:
 
-Site responsivo, desenvolvido com reactjs, usando react hooks :computer:
+Desenvolvido com reactjs, usando react hooks :computer:
 
 Api consumida - https://www.themoviedb.org/documentation/api <br> <br>
 Single Page Application :white_check_mark: <br> <br>
